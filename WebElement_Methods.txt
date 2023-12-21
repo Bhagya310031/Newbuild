@@ -1,0 +1,118 @@
+
+WebElement : 
+
+	    Any element [html] present in the webPage is called a webelement
+
+Locators : 
+
+
+	  Using locators we can find the webelement.
+
+	  locators are present in By (abstract class).
+
+
+Document Object Model ( DOM ) 
+
+In DOM  
+
+<html> 
+
+	<tagName attributeName = " attributeValue"/>
+
+	<tagName Create An Account />
+
+</html>
+
+
+tagName must be in pink color.
+
+attributeName must be in orange color.
+
+attributeValue must be in blue color.
+
+Text must be in black color.
+
+***********************************************************************************************************************************************************************
+Locators : 
+
+          id 
+
+	  name 
+
+	  className
+
+	  x-path
+
+	  CSS Locator 
+
+	  tagName
+
+	  Link Text
+
+	  Partial Link Text
+
+***********************************************************************************************************************************************************************
+
+WebElement Methods : 
+
+		sendKeys() ---> we pass the input values .
+
+		click()  ---->  to click on the webelement
+
+		getText()  ----> to get the text of the webelement is present in application.
+
+		getAttribute() :  
+
+		   		refName.getAttribute ("value") ----> input value that we passed into a textBox.
+
+		   		refName.getAttribute (" A.name") ----> return attributeValue
+
+
+	  	isDisplayed() ---> to check whether an element is visible (or) available in page.
+
+		isEnabled() ----> to check whether an element is editable (or) clickable
+
+		isSelected() ---> To Check whether an element is selected (or) not.
+
+
+		clear()  ---> it will clear the passed data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Facebook -->amazon--->title and url--->flipkart--->amazon -->facebook--titlt and url     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

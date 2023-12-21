@@ -1,0 +1,47 @@
+Locators
+=========
+
+id,name,classname,xpath,css,tagname,linktext,partiallinktext
+
+DOM--->Document Object Model --->It has all webelements are present in dom
+
+tagname  -----------> Pink
+attributename ------> Orange
+attribute value ---->Blue
+text ------>Black
+WebDriver Methods
+=================
+1.FindElement
+WebElement Methods
+==================
+1.text
+2.is displayed
+
+Xpath
+=====
+1.Absolute Xpath
+	Its starts from html tag / It will search the element from html node
+2.Relative Xpath
+	It will search the element from middle from the dom Page
+
+Syntax:
+	1.//tagname[@attributename='attributevalue']
+	2.//tagname[text()='fulltext']
+
+	3.(//tagname[text()='fulltext'])[index]
+	4.(//tagname[@attributename='attributevalue'])[index]
+
+
+from selenium import  webdriver
+from selenium.webdriver.common.by import By
+
+options=webdriver.ChromeOptions()
+options.add_experimental_option(name="detach",value=True)
+driver=webdriver.Chrome(options)
+driver.maximize_window()
+driver.get("https://www.amazon.in")
+mobile=driver.find_element(By.XPATH,"//a[@href='/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles']")
+print(mobile.text)
+print(mobile.is_displayed())
+mobile.click()
+driver.find_element(By.XPATH,"(//span[text()='Samsung'])[2]").click()
